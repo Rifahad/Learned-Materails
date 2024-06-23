@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="loginPage">
+            <h1>LOGIN PAGE</h1>
+            <form action="/submit" method="post">
+                <label for="dataInput">Enter Data:</label>
+                <input type="text" id="dataInput" name="rt" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginPage{
+    width: 400px;
+    height: 600px;
+    background-color:lightcoral;
+}
+</style>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+ 
+</head>
+
+
+<body >
+    <div class="google"><i></i></div>
+    <style>
+        .google
+        {
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border-top: 25px solid red;
+            border-left: 25px solid yellow;
+            border-bottom: 25px solid green;
+            border-right: 25px solid blue;
+            
+        }
+        .google::before
+        {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 25px;
+            background-color: blue;
+            left: 110px;
+            top: 70px;
+
+        }
+
+        .google::after
+        {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 110px solid transparent;
+            border-bottom: 0px solid transparent;
+            border-right: 110px solid white;
+            top: -40px;
+            left:75px;
+        }
+
+
+
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="search"></div>
+    <style>
+        .search{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+
+        }
+        .search::before{
+            content: '';
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius:50% ;
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        .search::after{
+            content: '';
+            width: 29px;
+            height: 0px;
+            border: 1px solid black;
+            position: absolute;
+            top: 14px;
+            transform: rotate(45deg);
+            
+        }
+
+    </style>
+</body>
+
+</html>

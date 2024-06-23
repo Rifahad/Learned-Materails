@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body bgcolor="black">
+    <div class="km-player"></div>
+    <style>
+        .km-player
+        {
+            width: 200px;
+            height: 160px;
+            background-color: white;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .km-player::before
+        {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 100px solid rgb(74, 125, 201);
+            top: 20px;
+            left:70px;
+            transform: rotate(180deg);
+            border-radius: 10px;
+        }
+
+        .km-player::after
+        {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 100px solid rgb(204, 9, 204);
+            border-radius: 10px;
+            top: 20px;
+            left:25px;
+        }
+    </style>
+</body>
+
+</html>

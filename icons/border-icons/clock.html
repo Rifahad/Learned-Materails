@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="clock"></div>
+    <style>
+        .clock{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius:50% ;
+            position: absolute;
+            
+
+        }
+        .clock::before{
+            content: '';
+            width: 10px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid black;
+            top: 20px;
+            left: 10px;
+            transform: rotate(-90deg);
+           
+            
+        }
+        .clock::after{
+            content: '';
+            width: 10px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid black;
+            top: 15px;
+            left: 15px;
+            
+            
+            
+        }
+
+    </style>
+</body>
+
+</html>

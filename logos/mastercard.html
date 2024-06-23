@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body bgcolor="black">
+    <div class="mastercard"></div>
+    <style>
+        .mastercard
+        {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color:rgba(255, 0, 0, 0.736);
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .mastercard::before
+        {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color:rgba(255, 234, 0, 0.653);
+            left:90px;
+        }
+
+
+    </style>
+</body>
+   
+</html>

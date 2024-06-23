@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="mul"></div>
+    <style>
+        .mul{
+            width: 50px;
+            height: 3px;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+
+        }
+        .mul::before{
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            transform: rotate(45deg);
+            animation: left 1s ease infinite alternate;
+        }
+        @keyframes left{
+            100%{
+                width: 0;
+                background-color: red;
+            }
+        }
+        .mul::after{
+            content: '';
+            width: 50px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            transform: rotate(-45deg);
+            animation: right 1s ease infinite alternate;
+
+        }
+        @keyframes right{
+            100%{
+                width: 0;
+                background-color: red;
+                transform: rotateX(90deg);
+            }
+        }
+    </style>
+</body>
+
+</html>

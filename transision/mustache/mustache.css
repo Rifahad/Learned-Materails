@@ -1,0 +1,63 @@
+.mustache{
+    width: 180px;
+    height: 180px;
+    color: black;
+    /* background-color: currentColor; */
+    border-radius: 50%;
+    box-shadow: 150px 240px 0 0 currentColor,
+                 300px 240px 0 0  currentColor;
+       position: absolute;
+       left: 150px;          
+                 
+}
+.mustache::before{
+    content: " ";
+    width: 210px;
+    height: 120px;
+    /* background: darkred; */
+    position: absolute;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 0 100%;
+    top: 120px;
+    left: 30px;
+    transform: rotate(-40deg);
+    transform-origin: right 210px;
+    animation: mustache-bef 1s ease-in-out infinite alternate;
+}
+
+@keyframes mustache-bef{
+    0%{
+        transform: rotate(0)
+    }
+    /* 100%{
+        transform: rotate(-40deg);
+    } */
+}
+
+
+
+
+.mustache::after{
+    content: " ";
+    width: 210px;
+    height: 120px;
+    /* background: darkred; */
+    position: absolute;
+    border-bottom: solid 180px currentColor;
+    border-radius: 0 0 100% 0;
+    top: 120px;
+    left: 390px;
+    transform: rotate(40deg);
+    transform-origin: left 210px;
+    animation: mustache-aft 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes mustache-aft{
+    0%{
+        transform: rotate(0)
+    }
+    /* 100%{
+        transform: rotate(40deg);
+    } */
+}

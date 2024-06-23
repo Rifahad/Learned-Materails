@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse</title>
+ 
+</head>
+
+
+<body>
+    <div class="mouse"></div>
+    <style>
+        .mouse{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 45px;
+            height: 70px;
+            border: 2px solid black;
+            border-radius:40%;
+
+            position: absolute;
+            
+
+        }
+        .mouse::before{
+            content: '';
+            width: 20px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid black;
+            top: 10px;
+            left: 12px;
+            transform: rotate(-90deg);
+           
+            
+        }
+        .mouse::after{
+            content: '';
+            width: 43px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid black;
+            top: 20px;
+            
+            
+            
+        }
+
+    </style>
+</body>
+
+</html>

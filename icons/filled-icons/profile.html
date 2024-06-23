@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="plus"></div>
+    <style>
+        .plus{
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .plus:before{
+            content: '';
+            width: 30px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            top: 18px;
+            left: -8px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transform: rotate(180deg);
+            
+            
+        }
+
+    </style>
+</body>
+
+</html>

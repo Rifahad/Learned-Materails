@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dominos</title>
+ 
+</head>
+
+
+<body bgcolor="black">
+    <div class="dominos"><i></i></div>
+    <style>
+        .dominos
+        {
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            width: 290px;
+            height: 140px;
+            border-radius: 10px;
+            background-color: white;
+            transform: rotate(-30deg);
+        }
+        .dominos::before
+        {
+            content: "";
+            position: absolute;
+            width: 130px;
+            height: 120px;
+            background-color: blue;
+            border-radius: 10px;
+            box-shadow: 140px 0px red;
+            left: 10px;
+            top: 10px;
+
+        }
+
+        .dominos::after
+        {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            box-shadow: 40px 50px white,160px 20px white;
+            border-radius: 50%;
+            left: 40px;
+            top: 30px;
+        }
+
+
+
+    </style>
+</body>
+
+</html>

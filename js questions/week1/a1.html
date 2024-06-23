@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    var days=['SUNDAY','MONDAY','TUESDAY','WENESDAY','THURSDAY','FRIDAY','SATURDAY']
+    var day = new Date();
+    var time = day.toLocaleTimeString();
+    document.write("today is "+days[day.getDay()]+"<br>"+"current time"+time)
+</script>
+</html>

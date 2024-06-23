@@ -1,0 +1,32 @@
+javascript is only one command at a time
+sychronous single language
+everything happen in js inside an execution content
+
+2 faces:-
+	memory		code
+
+
+
+
+first face(memory)=run all elements just covered and it undefined
+
+sec face(code)= definining elements
+
+
+
+function invoke: call a function is called invoke
+
+
+call stack is a stack were all the global context are kept
+
+call stack also known as:
+	call stack
+	machine stack
+	execution context stack
+	runtime stack
+	control stack
+	program stack
+
+
+
+hoisting in javascript : 

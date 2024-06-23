@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addidas</title>
+ 
+</head>
+
+
+<body >
+    <div class="addidas"></div>
+    <style>
+        .addidas
+        {
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            background-color: black;
+            width: 60px;
+            height: 150px;
+            box-shadow: -80px 0px black,80px 0px black;
+            
+        }
+        .addidas::before
+        {
+            content: "";
+            width: 400px;
+            height: 200px;
+           transform: rotate(-35deg);
+            background-color: white;
+            position: absolute;
+            top: -140px;
+            left: -180px;
+        }
+
+
+  
+    </style>
+</body>
+
+</html>

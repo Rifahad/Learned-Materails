@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="menu"></div>
+    <style>
+        .menu{
+            width: 40px;
+            height: 3px;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            background-color: black;
+
+        }
+        .menu::before{
+            content: '';
+            width: 40px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            top: 10px;
+        }
+        .menu::after{
+            content: '';
+            width: 40px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            top: 20px;
+        }
+
+    </style>
+</body>
+
+</html>

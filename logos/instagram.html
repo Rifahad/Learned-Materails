@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+ 
+</head>
+
+
+<body >
+    <div class="instagram"><i></i></div>
+    <style>
+        .instagram
+        {
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
+            background: radial-gradient(circle at 30% 110%, #ffdb8b 0%,#ee653d 25%,#d42e81 50%,#a237b6 75%,#3e5fbc 100%);            
+        }
+        .instagram::before
+        {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 7px solid white;
+            border-radius: 30%;
+            left: 17px;
+            top: 17px;
+
+        }
+
+        .instagram::after
+        {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 7px solid white;
+            border-radius: 50%;
+            left: 42px;
+            top: 44px;
+        }
+
+        .instagram ::before
+        {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            left: 100px;
+            top: 42px;
+        }
+
+
+    </style>
+</body>
+
+</html>

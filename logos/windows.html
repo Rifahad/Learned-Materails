@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="windows"></div>
+    <style>
+        .windows
+        {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .windows::before
+        {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: rgb(18, 208, 18);
+            position: absolute;
+            left:110px;
+        }
+
+        .windows::after
+        {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: rgb(33, 141, 217);
+            top: 110px;
+            position: absolute;
+            box-shadow: 110px 0px yellow;
+        }
+
+    </style>
+</body>
+
+</html>

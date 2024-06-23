@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sun</title>
+ 
+</head>
+
+
+<body>
+    <div class="sun"></div>
+    <style>
+        .sun{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .sun::before{
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: black;
+            position: absolute;
+            border-radius: 50%;
+            top: -13px;
+            left:28px;
+            box-shadow: 15px 0px black,
+                        -15px 5px currentColor,
+                        30px 5px currentColor,
+                        50px 15px currentColor,
+                        60px 30px currentColor,
+                        68px 45px currentColor,
+                        68px 60px currentColor,
+                        65px 75px currentColor,
+                        58px 90px currentColor,
+                        45px 102px currentColor,
+                        30px 108px currentColor,
+                        15px 110px currentColor,
+                        0px 108px currentColor,
+                        -15px 100px currentColor,
+                        -25px 90px currentColor,
+                        -35px 80px currentColor,
+                        -40px 65px currentColor,
+                        -40px 50px currentColor,
+                        -38px 35px currentColor,
+                        -30px 20px currentColor
+                        ;
+        }
+
+
+    </style>
+</body>
+
+</html>

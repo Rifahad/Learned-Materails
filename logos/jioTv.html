@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jio</title>
+ 
+</head>
+
+
+<body >
+    <div class="jioTv"><i></i></div>
+    <style>
+        .jioTv
+        {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .jioTv::before
+        {
+            content: "";
+            width: 100px;
+            height: 70px;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            top: 30px;
+            left:25px;
+        }
+
+        .jioTv::after
+        {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 30px solid red;
+            top: 45px;
+            left:60px;
+        }
+
+        .jioTv ::after
+        {
+            position: absolute;
+            content: '';
+            width: 35px;
+            height: 8px;
+            top: 110px;
+            left: 55px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+    </style>
+</body>
+
+</html>

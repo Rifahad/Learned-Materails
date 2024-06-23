@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.black{
+    color: black;
+}
+
+.big{
+    font-size: 3rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;    
+    overflow-x: hidden;
+}
+
+.background{
+    width: 100%;
+    height: 800px;
+    background-color:white;
+    position: fixed;
+    z-index: -1;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    position: fixed;
+}
+.navbar:hover{
+    color: red;
+    text-decoration: dashed red;
+}
+
+
+.portfolio{
+    padding-right: 950px;
+    padding-left: 30px;
+}
+
+.p{
+    color: red;
+}
+.navbar{
+    font-size: x-small;
+    text-decoration: none;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.home{
+    width: 100%;
+    height: 750px;
+    /* background-color: rgba(0, 30, 255, 0.068); */
+    display: flex;
+}
+
+
+
+.homea{
+    width: 60%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    animation: opacity 7s ease forwards;
+
+}
+
+.hai{
+    font-size: 3rem;
+    padding-left: 100px;
+}
+
+.rifahad{
+    font-size: 8rem;
+    padding-left: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.homeb{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    opacity: 0;
+    animation: opacity 9s ease forwards;
+
+}
+
+@keyframes opacity {
+
+    90%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+ 
+    }
+ }
+
+.me{
+    opacity: .7;
+    width: 550px;
+}
+
+.about{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.abouta{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    /* flex-direction: column; */
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.about1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.about2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.skill{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightcoral; */
+}
+
+.skilla{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.skill1{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.skill2{
+    
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 85%;    
+    }
+    .skills{
+         gap: 20px;
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+        height: 300px;
+        background: #000;
+    }
+    .html{
+    
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 900px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 4s html infinite;
+    }
+    
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        100%{
+            width: 10px;
+    
+        }
+       
+    }
+    .htmlp{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        transition: 1.5s;
+    
+    }
+    .htmlp:hover{
+        color: #e39479;
+    }
+    .htmlper{
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: antiquewhite;
+    }
+    .CSS{
+    
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 850px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 5s html infinite;
+        transition: 1.5s;
+    }
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        10%{
+            width: 350px;
+        }
+        
+    }
+    .CSSp{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        transition: 1.5s;
+      
+    }
+    .CSSp:hover{
+        color: #e39479;
+    }
+    .percentage{
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        width: 10%;
+        height: 300px;
+        background: #000000;
+    }
+    
+    .javascript{
+    
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 150px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 3s html infinite;
+    
+    }
+    
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        10%{
+            width: 90px;
+        }
+        100%{
+            width: 150px;
+        }
+    }
+    .javascriptp{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        /* animation: 5s htmlp  infinite; */
+        transition: 1.5s;
+    }
+    .javascriptp:hover{
+        color: #e39479;
+    }
+    
+    
+    
+    
+    .bootstrap{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 150px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 2.3s html infinite;
+    }
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        10%{
+            width: 90px;
+        }
+        
+    }
+    .bootstrapp{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        /* animation: 5s htmlp  infinite; */
+        transition: 1.5s;
+    }
+    .bootstrapp:hover{
+        color: #e39479;
+    }
+    
+    .C{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 580px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 3.5s html infinite;
+    }
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        10%{
+            width: 10px;
+        }
+        
+    }
+    .Cp{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        transition: 1.5s;
+    }
+    .Cp:hover{
+        color: #e39479;
+    }
+    
+    .jquery{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 650px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 4s html infinite;
+    }
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        10%{
+            width: 10px;
+        }
+        
+    }
+    .jqueryp{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        transition: 1.5s;
+        /* animation: 5s htmlp  infinite; */
+    }
+    .jqueryp:hover{
+        color: #e39479;
+    }
+    
+    /* ************ */
+    .Java{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 380px;
+        height: 20px;
+        background: linear-gradient(90deg, rgb(59, 52, 52) 0%, rgb(255, 0, 0) 90%);
+        animation: 3.5s html infinite;
+    }
+    @keyframes html {
+        0%{ 
+            position: relative;
+        }
+        10%{
+            width: 10px;
+        }
+        
+    }
+    .Javap{
+        font-weight: bolder;
+        color: beige;
+        font-family: sans-serif;
+        transition: 1.5s;
+    }
+    .Javap:hover{
+        color:#e39479;
+    }
+
+
+
+
+.service{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D5DBD;
+}
+
+.servicea{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    background-color: red;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.service1{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shutdown</title>
+ 
+</head>
+
+
+<body>
+    <div class="shutdown"><i></i></div>
+    <style>
+        .shutdown{
+            width: 40px;
+            height: 25px;
+            background-color: black;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+
+        }
+        .shutdown::before{
+            content: '';
+            width: 20px;
+            height: 20px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-top: 5px solid black;
+            border-left: 5px solid black;
+            border-right: 5px solid black;
+            border-bottom: 2px solid transparent;
+            position: absolute;
+            top: -24px;
+            left: 5px;
+            transform-origin:left ;
+            animation: shibil 1s ease infinite alternate;
+        }
+
+        @keyframes shibil {
+            100%{
+                transform: rotateY(180deg);
+            }
+        }
+
+
+    </style>
+</body>
+
+</html>

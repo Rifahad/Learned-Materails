@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+ 
+</head>
+
+
+<body>
+    <div class="edit"></div>
+    <style>
+        .edit{
+            position: absolute;
+            margin-top: 400px;
+            margin-left: 700px;
+            width: 100px;
+            height: 20px;;
+            border-radius: 0 10px 10px 0;
+            background-color: black;  
+            transform: rotate(-45deg);
+            animation: pencil 2s cubic-bezier(0.92, -1.37, 0, 2.62) infinite alternate;
+        }
+        @keyframes pencil {
+            0%{
+                
+            }
+            25%{
+               background-color: aqua;
+            }
+            50%{
+                background-color: blueviolet;
+            }
+            100%{
+                transform: rotate(180deg);
+                transform: translateX(100px);
+                background-color: blue;
+            }
+
+        }
+        .edit::before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 30px solid black;
+            left:-34px;
+        }
+        .edit::after{
+            content: wi;
+        }
+
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>levelx</title>
+ 
+</head>
+
+
+<body >
+    <div class="levelx"></div>
+    <style>
+        *{
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            background-color: white;
+        }
+        body{
+            width: 600px;
+            height: 600px;
+            background-color: #242953;
+            border-radius: 20%;
+        }
+        .levelx
+        {
+            position: absolute;
+            z-index: 1;
+            top: 200px;
+            left: 280px;
+            width: 150px;
+            height: 180px;
+            background-color: #f49401;
+            box-shadow:-136px 202px #242953, -87px 153px #1a8b9b;
+            position: absolute;
+            border-radius: 10%;
+            transform: rotate(45deg);
+
+        }
+         .levelx::before
+        {
+            content: "";
+            width: 150px;
+            height: 180px;
+            background-color: #242953;
+            position: absolute;
+            border-radius: 10%;
+            left: 48px;
+            top: -48px;
+        }
+
+         .levelx::after
+        { 
+            content: "";
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#1a8b9b;
+    position: absolute;
+    top: 153px;
+    left: -104px;
+    box-shadow: 117px 146px #1a8b9b, 219px -22px #f49401, 102px -171px #f49401;
+
+        }  
+
+
+
+
+
+    </style>
+</body>
+
+</html>

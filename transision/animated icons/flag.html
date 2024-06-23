@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flag</title>
+ 
+</head>
+
+
+<body>
+    <div class="flag"></div>
+    <style>
+        .flag{
+            
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 3px;
+            height: 70px;
+            background-color: black;
+            position: absolute;
+        }
+        .flag::before{
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 37px;
+            border-radius: 5%;
+            left: 7px;
+            top: 3px;
+            background-color: black;
+            animation: flag 1s ease-in-out infinite;
+        }
+
+        @keyframes flag {
+        0%{
+            width: 0;
+            opacity: 10;
+        }
+        100%{
+            transform: rotateX(30deg);
+            background-color: red;
+        }
+        }
+
+    </style>
+</body>
+
+</html>

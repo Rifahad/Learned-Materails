@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="more"></div>
+    <style>
+        .more{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            
+        }
+        .more::before{
+            content: '';
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: -15px;
+            left: -1px;
+        }
+        .more::after{
+            content: '';
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top:15px;
+            left: -1px;
+            
+        }
+
+    </style>
+</body>
+
+</html>

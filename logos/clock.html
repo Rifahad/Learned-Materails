@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beats</title>
+ 
+</head>
+
+
+<body >
+    <div class="clock"><i></i></div>
+    <style>
+        .clock
+        {
+            position: absolute;
+            top: 200px;
+            left: 180px;
+            width: 250px;
+            height: 250px;
+            border-radius:20% ;
+            background-color: rgb(149, 144, 144);
+            position: absolute; 
+            overflow: hidden;
+            
+        }
+        .clock::before
+        {
+            content: "";
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+        }
+        .clock::after
+        {
+            content: "";
+            width: 5px;
+            height: 80px;
+            background-color:white;
+            position: absolute;
+            left: 115px;
+            top: 50px;
+        }
+        .clock ::after
+        {
+            content: "";
+            width: 80px;
+            height: 5px;
+            background-color:red;
+            position: absolute;
+            left: 115px;
+            top: 125px;
+        }
+    </style>
+</body>
+
+</html>

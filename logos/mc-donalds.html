@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+ 
+</head>
+
+
+<body >
+    <div class="mc"><i></i></div>
+    <style>
+        .mc
+        {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            width: 120px;
+            height: 300px;
+            border-radius: 50%;
+            border: 15px solid yellow;
+            position: absolute; 
+            
+        }
+        .mc::before
+        {
+            content: "";
+            width: 120px;
+            height: 300px;
+            border-radius: 50%;
+            border: 15px solid yellow;
+            position: absolute;
+            top: -15px;
+            left: 120px;
+        }
+
+        .mc::after
+        {
+            content: "";
+            width: 300px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            top: 190px;
+            left: -20px;     
+
+        }
+
+        .mc ::before
+        {
+            content: "";
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 150px;
+            left: 55px;     
+        } 
+
+
+
+    </style>
+</body>
+
+</html>

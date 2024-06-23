@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carrybag</title>
+ 
+</head>
+
+
+<body >
+    <div class="carrybag"><i></i></div>
+    <style>
+        .carrybag
+        {
+            position: absolute;
+            top: 200px;
+            left: 180px;
+            position: absolute;    
+        }
+        
+        .carrybag::before
+        {
+            content: "";
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            border: 5px solid black;
+            position: absolute;
+            left: 78px;
+            top: 70px;
+            animation: circle 2s ease infinite;
+
+        }
+        @keyframes circle {
+        0%{
+            opacity: 0;
+            top: 100px;
+        }
+        }
+
+         .carrybag::after
+        { 
+            content: "";
+            width: 80px;
+            height: 80px;
+            background-color: yellow;
+            position: absolute;
+
+            top: 90px;
+            left: 60px; 
+            animation: bag 2s ease infinite;
+        }  
+        @keyframes bag {
+        0%{
+            top: 100px;
+        }
+        100%{
+            border-end-end-radius:40%;
+            border-bottom-left-radius:40% ;
+            border-top-left-radius:5% ;
+            border-top-right-radius:5% ;
+        }
+        }
+
+
+
+    </style>
+</body>
+
+</html>

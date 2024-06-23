@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quote</title>
+ 
+</head>
+
+
+<body>
+    <div class="quote"></div>
+    <style>
+        .quote{
+            width: 35px;
+            height: 35px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            animation: round 2s ease infinite alternate;
+        }
+        .quote:before{
+            content: '';
+            width: 30px;
+            height: 40px;
+            border-radius: 50%;
+            border-right:10px solid black ;
+            position: absolute;
+            top: 8px;
+            left: px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transform: rotate(180deg);
+            animation: quote 2s ease infinite alternate;
+
+
+        }
+
+                
+        @keyframes round {
+
+            100%{
+                background-color: red;
+                box-shadow: 7px 0 0 0;
+                transform: scale(3);
+            }
+
+        }
+
+
+        @keyframes quote {
+
+            100%{
+                border-right:10px solid red;
+            }
+
+        }
+    </style>
+</body>
+
+</html>

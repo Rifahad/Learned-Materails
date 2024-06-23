@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raindrop</title>
+ 
+</head>
+
+
+<body>
+    <div class="raindrop"><i></i></div>
+    <style>
+        .raindrop{
+            width: 25px;
+            height: 25px;
+            border: 1px solid black;
+            border-radius:16px 16px 16px 0 ;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            transform: rotate(135deg);
+
+        }
+        .raindrop::before{
+            content: '';
+            width: 0px;
+            height: 50px;
+            border: 1px solid black;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: -15px;
+            left: 10px;
+
+        }
+
+
+    </style>
+</body>
+
+</html>

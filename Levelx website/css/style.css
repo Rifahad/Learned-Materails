@@ -1,0 +1,754 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: CabinetGrotesk-Extrabold,sans-serif;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.header{
+    width: 100%;
+    height: 30px;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    border-radius: 50%;
+    filter: blur(70px);
+    background-color: rgb(225, 165, 243);
+    box-shadow: 800px 100px 0 80px yellow,
+                700px -300px 0 80px violet,
+                50px 250px 0 80px skyblue,
+                100px -300px 0 80px lightgreen,
+                700px 270px 0 80px yellowgreen,
+                750px -100px 0 80px rosybrown,
+                500px 200px 0 80px skyblue;
+    z-index: -1;
+    animation: circles 10s ease infinite alternate;
+}
+
+@keyframes circles {
+    25%{
+        transform:translate(50px,30px) ;
+    }
+    50%{
+        transform:translate(-50px,50px) ;
+    }
+    75%{
+        transform:translate(0px,30px) ;
+    }
+    100%{
+        transform:translate(0px,-30px) ;
+    }
+}
+
+.levelx{
+    padding-top: 35px;
+    width: 93px;
+    height: 90px;
+}
+
+.space{
+    width: 100%;
+    height: 150px;
+}
+
+.index{
+    width: 100%;
+    height: 250px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index1,.index2,.index3{
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    height: 33%;
+    font-size: 4.5rem;
+    color: #242a54;
+    /* background-color: yellow; */
+}
+
+.index2::after{
+    content: "Flutter Developer";
+     animation: courses 9s ease infinite;
+     color: #242a54;
+ }
+
+ @keyframes courses {
+     10%{
+        opacity: 0;
+         filter: blur(10px);
+         letter-spacing: -2rem;
+     }
+     20%{
+         content: "Angular Developer";
+         filter: blur(0);
+         letter-spacing: 2px;
+         opacity: 1;
+     }
+     30%{
+         filter: blur(10px);
+         letter-spacing: -2rem;
+         opacity: 0;
+     }
+     40%{
+         content: "React developer";
+         filter: blur(0);
+         letter-spacing: 2px;
+         opacity: 1;
+     }
+     50%{
+         filter: blur(10px);
+         letter-spacing: -2rem;
+         opacity: 0;
+     }
+     60%{
+         content: "Full-Stack Developer";
+         filter: blur(0);
+         letter-spacing: 2px;
+         opacity: 1;
+     }
+     70%{
+         filter: blur(10px);
+         letter-spacing: -2rem;
+         opacity: 0;
+     }
+     80%{
+         content: "Angular Developer";
+         filter: blur(0);
+         letter-spacing: 2px;
+         opacity: 1;
+     }
+     90%{
+         filter: blur(10px);
+         letter-spacing: -2rem;
+         opacity: 0;
+     }
+     100%{
+         content: "Flutter Developer";
+         filter: blur(0);
+         letter-spacing: 2px;
+         opacity: 1;
+     }
+ }
+
+.text{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.batch{
+    width: 100%;
+    height: 600px;
+    /* background-color: yellow; */
+    padding-left: 260px;
+    padding-top: 125px;
+}
+
+.batchBox{
+    width: 80%;
+    height: 180px;
+    background-color: #242a54;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+}
+
+.batchBox1,.batchBox3{
+    color: black;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 20%;
+    font-weight: bold;
+}
+
+.batchBox1{
+    padding-top: 40px;
+    padding-left: 75px;
+}
+
+.batchBox2{
+    color: #fff;
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 60%;
+    padding-top: 25px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.batchBox3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date{
+    width: 100px;
+    height: 110px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.feb,.year{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(246 177 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year{
+    background-color: white;
+}
+
+.fd{
+    font-size: 2.25rem;
+}
+
+.apply{
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+}
+
+.dm{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    padding-top: 25px;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.cal{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.container2{
+    width: 100%;
+    height: auto;
+    /* background-color: lightgrey; */
+}
+
+.hr{
+    width: 0;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.container2:hover .hr{
+    animation: hr 1s ease forwards;
+}
+
+@keyframes hr{
+    100%{
+        width: 75%;
+    }
+}
+
+.section{
+    width: 100%;
+    height: 300px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.revolution{
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #242a54;
+    gap: 7px;
+}
+
+.convention{
+    font-size: 1.25rem;
+    opacity: 0.5;
+}
+
+.features{
+    width: 100%;
+    height: 460px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.f{
+    width: 23%;
+    height: 360px;
+    background-color: aqua;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.f1{
+    background-color: #b4edf8;
+}
+
+.f2{
+    background-color: #fbddb1;
+}
+
+.f3{
+    background-color: #a7f3d0;
+}
+
+.f4{
+    background-color: #d8b4fe;
+}
+
+.icon{
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    color: black;
+    padding-top: 15px;
+}
+
+.path{
+    width: 100%;
+    height: 600px;
+    /* background-color: #d8b4fe; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.path1{
+    width: 99%;
+    height: 450px;
+    background-color: rgb(180 237 248);
+    border-radius: 20px;
+    overflow: hidden;
+    color: #242A54;
+}
+
+.path1a{
+    width: 100%;
+    height: 50%;
+    /* background-color: #d8b4fe; */
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 50px;
+}
+
+.path1b{
+    width: 100%;
+    height: 50%;
+    /* background-color: #fbddb1; */
+    display: flex;
+    font-size: 1.125rem;   
+}
+.a1{
+    margin-left: 70px !important;
+}
+
+.a1,.a2,.a3,.a4,.a5{
+    width: 50px;
+    height: 70px;
+    border-left: 2px dotted black;
+    border-top: 2px dotted black;
+    margin-left: 250px;
+}
+
+.pb1{
+    /* background-color: red; */
+    position: absolute;
+    left: 100px;
+    top: 2390px;
+    height: 10px;
+
+}
+.pb1:before{
+    content: "1";
+    padding:5px 10px;
+    background-color: #242a54;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -33px;
+    top: -43px;
+}
+
+.pb2{
+    position: absolute;
+    left: 400px;
+    top: 2390px;
+    /* background-color: lime; */
+    height: 70px;
+}
+.pb2:before{
+    content: "2";
+    padding:5px 10px;
+    background-color: #242a54;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: -43px;
+}
+.pb3{
+    position: absolute;
+    left: 700px;
+    top: 2390px;
+    /* background-color: darkorange; */
+}
+
+.pb3:before{
+    content: "3";
+    padding:5px 10px;
+    background-color: #242a54;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: -43px;
+}
+
+.pb4{
+    position: absolute;
+    left: 1000px;
+    top: 2390px;
+    /* background-color: springgreen; */
+}
+
+.pb4:before{
+    content: "4";
+    padding:5px 10px;
+    background-color: #242a54;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: -43px;
+}
+.pb5{
+    position: absolute;
+    /* background-color: royalblue; */
+    left: 1300px;
+    top: 2390px;
+}
+.pb5:before{
+    content: "5";
+    padding:5px 10px;
+    background-color: #242a54;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: -43px;
+}
+
+.functions{
+    width: 100%;
+    height: 500px;
+    /* background-color: #d8b4fe; */
+    display: flex;
+    flex-direction: column;
+}
+
+.sdv{
+    widows: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+    /* background-color: yellow; */
+}
+
+.function2{
+    width: 100%;
+    height: 60%;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+}
+.phc{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+.phc1{
+    margin-left:-120px;
+    
+}
+.phc2{
+    margin-left: -160px;
+}
+.phc3{
+    margin-left: -130px;
+    
+}
+
+.f2a{
+    width: 30%;
+    height: 100%;   
+    /* background-color: lightpink; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.f2b{
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-left:2px dotted black;
+    border-right:2px dotted black;
+
+}
+
+.f2c{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.batches{
+    width: 100%;
+    height: 800px;
+    /* background-color: yellow; */
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+
+.ba{
+    width: 550px;
+    height: 600px;
+    border-radius: 30px;
+}
+
+.flutterBatch{
+    background-color: rgb(225 248 252);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.febyear{
+    width: 140px;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.feb1{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(246 177 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year1{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentorship{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    display: flex;
+}
+.training{
+    width: 100%;
+    height: 60px;
+    /* background-color: lightblue; */
+    display: flex;
+}
+.images{
+    width: 100%;
+    height: 80px;
+    /* background-color: #242A54; */
+    padding-top: 30px;
+}
+.joinArrow{
+    width: 550px;
+    height: 100px;
+    padding-left: 0px;
+    margin-left: -30px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stackBatch{
+    background-color: rgb(253 242 224);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+
+.questions{
+    width: 100%;
+    height: 800px;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+}
+
+.question1{
+    width: 100%;
+    height: 200px;
+    /* background-color: #a7f3d0; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.question2{
+    width: 100%;
+    height: 600px;
+    /* background-color: lawngreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.quest-btn{
+    width: 950px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: #242a54;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.end{
+    width: 100%;
+    height: 600px;
+    background-color:rgb(23 195 226);
+    padding-top: 40px;
+    color:#242A54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.joinButton{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+.footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 350px;
+    background-color: #242a54;
+    display: flex;
+    color: white;
+}
+
+.footera{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.footerb{
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+
+.footerb1{
+    width: 40%;
+    height: 100%;
+    padding-top: 50px;
+
+}
+
+.footerb2{
+    width: 60%;
+    height: 100%;
+    padding-top: 70px;
+    padding-left: 10px;
+}
+
+.footerc{
+    width: 30%;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.follow{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}

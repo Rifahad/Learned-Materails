@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+ 
+</head>
+
+
+<body>
+    <div class="home"></div>
+    <style>
+        .home{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 80px;
+            height: 60px;
+            background-color: black;
+        }
+        .home::before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 50px solid black;
+            transform: rotate(-90deg);
+            top: -64px;
+            left:15px;
+        }
+
+        .home::after{
+            content: "";
+            width: 25px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            border-top-left-radius:30%;
+            border-top-right-radius:30%;
+            top: 22px;
+            left:27px;
+        }
+    </style>
+</body>
+
+</html>

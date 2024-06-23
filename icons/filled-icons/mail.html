@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="mail"></div>
+    <style>
+        .mail{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 70px;
+            height: 40px;
+            border: 2px solid black;
+            background-color: black;
+    
+
+        }
+        .mail::before{
+            content: '';
+            width: 40px;
+            border: 1px solid white;
+            position: absolute;
+            transform: rotate(35deg);
+            transform-origin:left;
+        }
+
+        .mail::after{
+            content: '';
+            width: 42px;
+            border: 1px white solid;
+            transform: rotate(-35deg);
+            transform-origin:right;
+            left: 27px;
+            top: -1px;
+            position: absolute;
+        }
+
+    </style>
+</body>
+
+</html>

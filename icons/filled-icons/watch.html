@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="watch"><i></i></div>
+    <style>
+        .watch{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 15px;
+            height: 70px;
+            border: 1px solid black;
+            background-color: black;
+
+        }
+        .watch ::after{
+            content: '';
+            width: 10px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid white;
+            top: 29px;
+            left: 0px;
+            transform: rotate(-90deg);
+           
+            
+        }
+        .watch::after{
+            content: '';
+            width: 10px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid white;
+            top: 34px;
+            left: 5px;
+        }
+        .watch ::before{
+            content: '';
+            width: 25px;
+            height: 25px;
+            border: 1px solid white;
+            background-color: black;
+            border-radius:50% ;
+            position: absolute;
+            left: -6px;
+            top: 20px;
+        }
+
+    </style>
+</body>
+
+</html>

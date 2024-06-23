@@ -1,0 +1,58 @@
+
+
+body{
+    animation: cont 10s ease infinite;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+@keyframes cont{
+    0%{
+         background-color: white;
+     }
+     50%{
+         background-color: black;
+     }
+     100%{
+         background-color: white;
+     }
+ 
+ }
+
+
+.sun{
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 100px 100px, #ffef5c, rgb(209, 69, 13));
+    box-shadow: 0 0 2px 1px  rgb(255, 255, 0);
+    border-radius: 50%;
+}
+
+.shadow{
+    width: 170px;
+    height: 170px;
+    animation: shad 10s ease infinite;
+    border-radius: 50%;
+}
+
+@keyframes shad{
+   0%{
+        transform: translateX(150px);
+        background-color: white;
+    }
+    50%{
+        transform: translateX(-10px);
+        background-color: black;
+    }
+    100%{
+        transform: translateX(170px);
+        background-color: white;
+    }
+
+}

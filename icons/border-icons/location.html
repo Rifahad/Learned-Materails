@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+ 
+</head>
+
+
+<body>
+    <div class="location"><i></i></div>
+    <style>
+        .location{
+            width: 25px;
+            height: 25px;
+            border: 2px solid black;
+            border-radius:16px 16px 16px 0 ;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            transform: rotate(-45deg);
+
+        }
+        .location::before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 7px;
+            left: 6px;
+
+        }
+
+
+    </style>
+</body>
+
+</html>

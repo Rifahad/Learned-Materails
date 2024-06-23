@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key</title>
+ 
+</head>
+
+
+<body>
+    <div class="key"></div>
+    <style>
+        .key{
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius:50% ;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            background-color: black;
+            transform-origin: left;
+            animation: key 1s ease infinite alternate;
+
+        }
+        @keyframes key{
+            100%{
+                transform: rotateX(180deg),;
+            }
+        }
+        .key::before{
+            content: '';
+            width: 50px;
+            height: 2px;
+            border: 2px solid black;
+            background-color: black;
+            position: absolute;
+            top: 12px;
+            left: 30px;
+            
+        }
+        .key::after{
+            content: '';
+            width: 2px;
+            height: 12px;
+            border: 1px solid black;
+            background-color: black;
+            border-radius:10% ;
+            position: absolute;
+            top: 16px;
+            left: 60px;
+            box-shadow: 10px 0;
+        }
+
+
+    </style>
+</body>
+
+</html>

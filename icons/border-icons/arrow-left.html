@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+
+
+<body>
+    <div class="arrow-left"></div>
+    <style>
+        .arrow-left{
+            width: 40px;
+            height: 0px;
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            border: 1px solid black;
+            
+            
+
+        }
+        .arrow-left::before{
+            content: '';
+            width: 20px;
+            height: 0px;
+            border: 1px solid black;
+            position: absolute;
+            top: -8px;
+            left: -10px;
+            transform: rotate(-45deg);
+        }
+        .arrow-left::after{
+            content: '';
+            width: 20px;
+            height: 0px;
+            border: 1px solid black;
+            position: absolute;
+            top: 5px;
+            left: -10px;
+            transform: rotate(45deg);
+        }
+
+    </style>
+</body>
+
+</html>

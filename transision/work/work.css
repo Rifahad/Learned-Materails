@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+}
+
+.circle1{
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border-radius: 50%;
+    animation: circle1 5s ease infinite ;
+    animation-direction: alternate;
+}
+@keyframes circle1{
+    0%{
+        transform:translate(0%); 
+        border-right: 10px solid blue;
+    }
+    25%{
+        transform: translateY(300%);
+        border-top: 10px solid red;
+    } 
+
+    50%{
+        transform: translate(300%,300%);
+       
+    }
+    75%{
+        transform: translate(300%,0%);
+        border-left: 10px solid violet;
+    } 
+    100%{
+        transform: translate(0%,0%);
+        border-bottom: 10px solid white;
+    }
+}
+
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+.circle2{
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border-radius: 50%;
+    animation: circle2 5s ease infinite;
+    /* animation-direction: alternate; */
+}
+@keyframes circle2{
+    0%{
+        transform:translateX(150%)
+    }
+    25%{
+        transform: translateY(150%);
+        background-color: red;
+    } 
+
+    50%{
+        transform: translate(150%,300%);
+        background-color: yellow;
+    }
+    75%{
+        transform: translate(300%,150%);
+        background-color: blue;
+    } 
+    100%{
+        transform: translate(150%,0%);
+        background-color: aqua;
+    }
+}
+
+
+
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+}
+
+.circle3{
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border-radius: 50%;
+    animation: circle3 5s ease infinite ;
+    animation-direction: alternate;
+}
+@keyframes circle3{
+    0%{
+        transform:translate(150%,150%); 
+    }
+    25%{
+        transform: translate(0%,150%);
+    } 
+
+    50%{
+        transform: translate(150%,300%);
+        border-radius: 0;
+    }
+    75%{
+        transform: translate(300%,150%);
+    } 
+    100%{
+        transform: translate(150%,0%);
+    }
+}
+
+
+
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: lightslategrey;
+}
+
+.circle4{
+    width: 25%;
+    height: 25%;
+    background-color: black;
+    border-radius: 50%;
+    animation: circle4 5s ease infinite ;
+    animation-direction: alternate;
+}
+@keyframes circle4{
+    0%{
+        transform:translate(0%); 
+        border:5px solid green;
+
+    }
+    10%{
+        transform: translate(0%,100%);
+    } 
+
+    20%{
+        transform: translate(100%,0%);
+    }
+    30%{ 
+        transform:translate(200%,0%);
+    } 
+    40%{
+        transform: translate(0%,200%);
+    }
+    50%{
+        transform: translate(0%,300%);
+        border: 5px solid red;
+    }
+    60%{
+        transform: translate(300%,0);
+    }
+    70%{
+        transform: translate(300%,100%);
+        border: 5px solid blue;
+    }
+    80%{
+        transform: translate(100%,300%);
+    }
+    90%{
+        transform: translate(300%,200%);
+    }
+    100%{
+        transform: translate(300%,300%);
+        border: 5px solid yellow;
+    }
+}
+
+
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
+
+.circle5{
+    width: 25%;
+    height: 25%;
+    background-color: rgb(72, 187, 0);
+    animation: circle5 5s ease infinite ;
+    animation-direction: alternate;
+}
+@keyframes circle5{
+    0%{
+        transform:translate(0%,300%);
+        
+    }
+    15%{
+        transform: translate(0%,0% );
+        border-radius: 10%;
+
+    } 
+
+    30%{
+        transform: translate(300%,0%);
+        border-radius: 20%;
+    }
+    45%{
+        transform: translate(300%,160%);
+        border-radius: 30%;
+    } 
+    60%{
+        transform: translate(60%,160%);
+        border-radius: 40%;
+        
+    }
+    100%{
+        transform: translate(300%,300%);
+        border-radius: 50%;
+    }
+
+
+}

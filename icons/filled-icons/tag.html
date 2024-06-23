@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tag</title>
+ 
+</head>
+
+
+<body>
+    <div class="tag"></div>
+    <style>
+        .tag{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+            width: 80px;
+            height: 60px;
+            background-color: black;
+            transform: rotate(-45deg);
+        }
+        .tag::before{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 50px solid black;
+            transform: rotate(-90deg);
+            top: -64px;
+            left:15px;
+        }
+
+        .tag::after{
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            border-radius: 50%;
+            top: -10px;
+            left:28px;
+        }
+    </style>
+</body>
+
+</html>

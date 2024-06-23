@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pause</title>
+ 
+</head>
+
+
+<body>
+    <div class="pause"></div>
+    <style>
+        .pause{
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 200px;
+
+        }
+        .pause::before{
+            content: '';
+            width: 12px;
+            height: 40px;
+            background-color: black;
+            box-shadow: 20px 0 currentColor;
+            position: absolute;
+            
+        }
+        .pause::after{
+            content: '';
+            width: 70px;
+            height: 70px;
+            border: 8px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: -24px;
+           
+            
+        }
+
+    </style>
+</body>
+
+</html>
